@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title> Play List</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+  </head>
+  <body>
+    <div class="phone">
+      <div class="player">
+        <div class="wavesurfer">
+          <div class="recordplayer">
+            <div class="recordplayer__disc">
+              <div class="recordplayer__disc-stripe1"></div>
+              <div class="recordplayer__disc-stripe2"></div>
+            </div>
+          </div>
+            <div class="artist__image">
+             <div class="artist__image-url"></div>
+            </div>
+            <div class="time">
+             <span class="time__minutes"></span>
+             <span>:</span>
+             <span class="time__seconds"></span>
+            </div>
+            <div class="progress">
+             <div class="progress__button"></div>
+             <div class="progress__indicator"></div>
+            </div>
+        </div>
+             <div id="wavesurfer" class="wavesurfer__elem"></div>
+            <div class="artist__name">
+              <p>Moonlight Serenade</p>
+              <h1>Balaji Music</h1>
+              <div class="love">&#9825;</div>
+              <div class="share"></div>
+            </div>
+            <div class="controls">
+              <button class="button__prev" onclick="prev()"></button>
+              <button id="play" class="button__play load">
+                <span class="button__play-iconplay"></span>
+                <span class="button__play-iconpause"></span>
+                <span class="button__loader"></span>
+              </button>
+              <button class="button__next" onclick="next()"></button>
+            </div>
+      </div>
+    </div>
+   <div class="hint">Press play</div>
+   <div id="music_list">
+    
+</div>
+   <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+  </body> 
+</html>
